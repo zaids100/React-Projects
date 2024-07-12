@@ -1,0 +1,182 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Container Styles */
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(154, 220, 154);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertical centering */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Main Content Styles */
+.main-content {
+  width: 40%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scroll */
+  max-height: 80vh; /* Limit height to avoid overflow */
+}
+
+/* Input Styles */
+.inputs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.input {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 200px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  border: 1px solid #837f7f;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons .add {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttons .add:hover {
+  background-color: #45a049;
+}
+
+.buttons .add:active {
+  background-color: #3e8e41;
+}
+
+.buttons .clear {
+  background-color: #f44336;
+  color: white;
+}
+
+.buttons .clear:hover {
+  background-color: #e53935;
+}
+
+.buttons .clear-btn:active {
+  background-color: #d32f2f;
+}
+
+/* Card List Styles */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid rgb(75, 75, 174);
+}
+
+.card .itemName {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .nutritions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .counter button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card .counter button:hover {
+  background-color: #45a049;
+}
+
+.card .counter button:active {
+  background-color: #3e8e41;
+}
+
+.card .counter span {
+  font-size: 1.2rem;
+}
+
+.edit-delete {
+  display: flex; /* Aligns buttons in a row */
+  justify-content: center;
+  gap: 10px; /* Adds space between the buttons */
+  margin-top: 10px; /* Adds space above the div */
+}
+
+.edit-delete .delete {
+  background-color: #e53935; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounds corners */
+  padding: 10px 20px; /* Adds padding */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.edit-delete .edit {
+  background-color: rgb(74, 74, 215); /* Blue background */
+  color: white; /* White text */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounds corners */
+  padding: 10px 20px; /* Adds padding */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+
